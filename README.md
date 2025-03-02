@@ -54,11 +54,11 @@ app for your workspace. Instructions here work as of March 2025.
     ```
 2. Install the required dependencies:
     ```bash
-    pip install slack-bolt anthropic diskcache
+    pip install slack-bolt anthropic diskcache requests
     ```
 3. Run the bot:
     ```bash
-    source env.txt
+    source env.sh
     python claude-slack-bot.py
     ```
 ## Basic Usage

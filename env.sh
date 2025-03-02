@@ -1,5 +1,9 @@
+#!/bin/bash
+
 SLACK_BOT_TOKEN=xoxb-your-bot-token
 SLACK_APP_TOKEN=xapp-your-app-token
 ANTHROPIC_API_KEY=your-anthropic-key
 ANTHROPIC_SYSTEM_PROMPT=system_prompt_1.txt
 AICAFE_CACHE_DIR=/tmp/ai-cafe-cache
+
+export SLACK_BOT_TOKEN SLACK_APP_TOKEN ANTHROPIC_API_KEY ANTHROPIC_SYSTEM_PROMPT AICAFE_CACHE_DIR
