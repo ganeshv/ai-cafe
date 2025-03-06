@@ -69,18 +69,18 @@ Mention the bot to start a new thread:
 If the bot is up and running, you should immediately see a :thinking_face: emoji below your message
 and Claude will reply in a threaded response. Continue the conversation in the thread.
 
-- Every thread is a separate, independent 1:1 conversation between Claude and the person who started the thread.
+- Every thread is a separate, independent 1:1 conversation between Claude and the original person who started the thread (OP).
 - You can attach images, PDFs and text files to messages.
 - Claude's context in a thread is limited to the contents of the thread - it does not know anything about
   other conversations or other channels.
-- Only the first message of the thread needs to mention @Claude, subsequent messages by the thread starter are implicitly addressed to Claude.
-- If the thread starter wants to "break the 4th wainject a comment in the thread for
-- Messages in a thread posted by people other than the thread-starter are ignored.
-- Deletion of a message in a thread, results in the bot deletes all subsequent responses of its own.
-  recover from unpromising lines of enquiry and resume the conversation along another tack.
-- Long responses going beyond ~3000 characters are converted to Slack snippets to get around Slack limits
-- Editing messages will not trigger any immediate re-evaluation, but subsequent interactions will pick up the edit as part of the context
-- Top-level messages which don't start with a @Claude mention are normal Slack threads, ignored by the bot
+- Only the first message of the thread needs to mention @Claude, subsequent messages by OP are implicitly addressed to Claude.
+- Messages in a thread posted by people other than the OP are ignored.
+- Within a thread, OP can prefix a message with @aside to insert comments which will be ignored by Claude.
+- Deletion of a message in a thread, results in the bot deletes all subsequent responses of its own. This helps
+  recovery from unpromising lines of enquiry and resume the conversation along another tack.
+- Long responses going beyond ~3000 characters are converted to Slack snippets to get around Slack limits.
+- Editing messages will not trigger any immediate re-evaluation, but subsequent interactions will pick up the edit as part of the context.
+- Top-level messages which don't start with a @Claude mention are normal Slack threads, ignored by the bot.
 
 ## Advanced
 ### Configuration Options
